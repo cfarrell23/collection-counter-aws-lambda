@@ -8,3 +8,7 @@ module "my_grp" {
   grp_name = var.grp_name
   user_name = module.my_user.user_name
 }
+
+module "collection-counter"{
+    source = "./modules/collection-counter"
+}
